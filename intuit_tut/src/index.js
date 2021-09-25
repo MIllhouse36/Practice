@@ -1,6 +1,6 @@
 function openNum(evt, cityName) {
   var i, tabcontent, tablinks;
-  tabContent = document.getElementsByClassName("tab-content");
+  tabContent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }

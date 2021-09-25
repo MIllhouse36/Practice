@@ -8,16 +8,19 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 0 50px;
+  margin: 0 50px;;
 }
 /* input header */
-header {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .input__container {
   height: 2rem;
+  /* align-self: flex-end; */
 }
 .input__container input {
   height: 90%;
@@ -34,21 +37,26 @@ header {
 }
 
 /* navigation */
-.nav__ul {
-  display: block;
-  margin: 0 auto;
-  justify-content: center;
+.nav__container{
   width: 100%;
+  margin: 0 auto;
+}
+.nav__ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
 }
 
 .nav__items {
-  display: inline-block;
-  max-width: 100%;
+  width: 100%;
+  display: block;
   background: blue;
   padding: 0.5rem 2rem;
   text-decoration: none;
   color: white;
   margin-top: 2px;
+  text-align: center;
+  margin: 2px 3px 0;
 }
 .orange {
   background: orange;
