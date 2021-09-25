@@ -20,6 +20,8 @@ body {
 
 .input__container {
   height: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
   /* align-self: flex-end; */
 }
 .input__container input {
@@ -28,9 +30,11 @@ body {
   font-size: 1rem;
 }
 
+
 .input__container button {
   color: white;
-  background: orange;
+  background:   rgb(255, 115, 0);
+  ;
   text-transform: uppercase;
   border: none;
   height: 100%;
@@ -53,13 +57,20 @@ body {
   background: blue;
   padding: 0.5rem 2rem;
   text-decoration: none;
-  color: white;
   margin-top: 2px;
   text-align: center;
   margin: 2px 3px 0;
+  /* color: white;
+  font-weight: 700; */
+}
+.nav__link{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+
 }
 .orange {
-  background: orange;
+  background: rgb(255, 115, 0);
 }
 .grey {
   background: grey;
