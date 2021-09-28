@@ -75,24 +75,31 @@ body {
   font-weight: 700;
 }
 
-/* .orange {
-  background: rgb(255, 115, 0);
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.grey {
-  
-} */
+.img-container {
+display: flex;
+
+}
 
 .img-container h2 {
+  display: flex;
   margin-bottom: 0;
   color: white;
-}
-
-.img-container {
-  background: grey;
-  background-size: contain;
   width: 100%;
-  max-width: 100%;
+  background: grey;
   border-radius: 0 23px 0 0;
+  justify-content: flex-end;
+  padding: 0 1rem 0 0;
+
+  
+}
+.img__about {
+ 
+  width: 100%;
 }
 
 /* Style the tab */
@@ -131,31 +138,37 @@ body {
   border-top: none;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+/* .aside__container{
+  width: 100%;
+} */
 
 .aside__menu {
   display: flex;
   height: 100%;
   list-style-type: none;
   flex-direction: column;
-  /* flex-wrap: nowrap; */
-  /* width: 100%; */
+  width: 100%;
+  padding:0 2rem;
 }
 .aside__items {
-  padding: 5px;
-  margin: 5px;
+  display: flex;
+  margin: 2px;
   white-space: nowrap;
   width: 100%;
+  
 }
 .aside__items a {
+  display: flex;
+  justify-content: flex-start;
   background: lightblue;
   text-decoration: none;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
   width: 100%;
+}
+
+.about__container{
+  width: 70%;
+  margin: 0 auto;
 }
 
 footer {
