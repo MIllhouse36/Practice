@@ -82,28 +82,32 @@
 
         <!-- Tab links -->
         <div class="tab">
-          <button class="tablinks" onclick="openNum(event, 'First')">
+          <button data-tab-target="#first__tab" class="active tab">
             First Tab
           </button>
-          <button class="tablinks" onclick="openNum(event, 'Second')">
+          <button data-tab-target="#second__tab" class="tab">
             Second Tab
           </button>
-          <button class="tablinks" onclick="openNum(event, 'Third')">
+          <button data-tab-target="#third__tab" class="tab">
             Third Tab
           </button>
         </div>
 
-        <div id="first__tab" class="tabcontent">
+        <div class="tab__content">
+
+        </div>
+
+        <div id="first__tab" class="tab__item active">
           <h3>First</h3>
           <p>I am the content of one.</p>
         </div>
 
-        <div id="second__tab" class="tabcontent">
+        <div id="second__tab" class="tab__item">
           <h3>Second</h3>
           <p>I am the content of two</p>
         </div>
 
-        <div id="Third__tab" class="tabcontent">
+        <div id="third__tab" class="tab__item">
           <h3>Third</h3>
           <p>I am the content of three</p>
         </div>
