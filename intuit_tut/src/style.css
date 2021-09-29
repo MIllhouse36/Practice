@@ -157,6 +157,7 @@ main {
 .tab__item.active{
   display: block;
 }
+
 .tab__item {
   display: none;
   padding: 6px 12px;
