@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   /* width: 100%; */
+  
 }
 
 body {
@@ -16,17 +17,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
+  padding: 0 1rem;
 }
 
 .input__container {
   height: 2rem;
   display: flex;
   flex-wrap: nowrap;
-  /* align-self: flex-end; */
+  /* padding: 0 0 0 100%; */
+ 
 }
 .input__container input {
-  height: 90%;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -43,13 +45,12 @@ body {
 .nav__container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;;
 }
 .nav__ul {
   display: flex;
   padding: 0;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
   margin: 0 auto;
 }
 
@@ -67,7 +68,7 @@ body {
   background: rgb(255, 115, 0);
 }
 .nav__items:nth-child(3n + 3) {
-  background: grey;
+  background: rgb(175, 176, 180);
 }
 .nav__link {
   text-decoration: none;
@@ -77,46 +78,43 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
- 
+  /* justify-content: center; */
 }
 
-
+.aside__container{
+  height: fit-content;
+}
 
 .aside__menu {
-  /* display: flex; */
-  height: 100%;
+  
   list-style-type: none;
   flex-direction: column;
   width: 250px;
-  /* height: 220px; */
-  padding:0 1rem;
+  padding: 0 1rem;
 }
 .aside__items {
   display: flex;
   margin: 2px;
   white-space: nowrap;
-  width: 100%;
-  height: 50px;
-  padding: auto 0;
-  
+  height: 2rem;
 }
 .aside__items a {
-  display: flex;
-  justify-content: flex-start;
   background: lightblue;
   text-decoration: none;
-  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+  padding: .5rem 1rem .5rem ;
   width: 100%;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(29, 114, 178);
 }
 
-.about__container{
+.about__container {
   width: 100%;
   margin: 0 1rem;
 }
 
 .img-container {
-display: flex;
+  display: flex;
 }
 
 .img-container h2 {
@@ -124,12 +122,10 @@ display: flex;
   margin-bottom: 0;
   color: white;
   width: 100%;
-  background: grey;
+  background: rgb(175, 176, 180);
   border-radius: 0 23px 0 0;
   justify-content: flex-end;
   padding: 0 1rem 0 0;
-
-  
 }
 .img__about {
   width: 100%;
@@ -165,7 +161,6 @@ display: flex;
   border: 1px solid #ccc;
   border-top: none;
 }
-
 
 footer {
   display: block;
