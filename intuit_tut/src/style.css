@@ -10,7 +10,8 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  width: 100%;
+  /* width: 1300px; */
+  max-width: 1300px;
 }
 /* input header */
 .header__container {
@@ -50,11 +51,13 @@ body {
 .nav__ul {
   display: flex;
   padding: 0;
-  justify-content: center;
-  margin: 0 auto;
+  /* justify-content: center; */
+  margin: 0;
 }
 
 .nav__items {
+  /* display: flex;
+  justify-content: center; */
   width: 100%;
   background: blue;
   padding: 0.5rem 2rem;
@@ -81,6 +84,7 @@ main {
   /* justify-content: center; */
 }
 
+/* Aside Section */
 .aside__container{
   height: fit-content;
 }
@@ -107,7 +111,7 @@ main {
   margin: 0;
   color: rgb(29, 114, 178);
 }
-
+/* About/Hero section */
 .about__container {
   width: 100%;
   margin: 0 1rem;
@@ -130,18 +134,15 @@ main {
 .img__about {
   width: 100%;
 }
-
+/* Tab Section */
 .tab {
   overflow: hidden;
-  border-bottom: none;  
-  
+  margin-bottom: -1px;
 }
 
 .tab button {
   background-color: rgb(238, 238, 238);
-  
   float: left;
-  border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -152,7 +153,7 @@ main {
   border: 1px solid #ccc;
   border-bottom: none;
   margin-right: 5px;
-
+  
 }
 
 .tab button:hover {
@@ -160,8 +161,8 @@ main {
 }
 
 .tab button.active {
-  /* background-color: #ccc; */
-  background-color: inherit;
+
+  background: white;
 }
 .tab__item.active{
   display: block;
@@ -171,9 +172,9 @@ main {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
-  border-top: none;
 }
 
+/* Footer */
 footer {
   display: block;
   background: lightgray;
