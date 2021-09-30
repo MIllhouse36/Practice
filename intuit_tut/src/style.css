@@ -2,7 +2,6 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   /* width: 100%; */
-  
 }
 
 body {
@@ -12,6 +11,7 @@ body {
   margin: 0 auto;
   /* width: 1300px; */
   max-width: 1300px;
+  height: 100vh;
 }
 /* input header */
 .header__container {
@@ -27,7 +27,6 @@ body {
   display: flex;
   flex-wrap: nowrap;
   /* padding: 0 0 0 100%; */
- 
 }
 .input__container input {
   font-weight: 500;
@@ -44,24 +43,23 @@ body {
 
 /* navigation */
 .nav__container {
+  display: block;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;;
+  padding: 0 1rem;
 }
 .nav__ul {
   display: flex;
   padding: 0;
-  /* justify-content: center; */
   margin: 0;
 }
 
 .nav__items {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
   width: 100%;
-  background: blue;
+  background: rgb(29, 114, 178);;
   padding: 0.5rem 2rem;
-  text-decoration: none;
   white-space: nowrap;
   text-align: center;
   margin: 2px 3px 0;
@@ -85,12 +83,11 @@ main {
 }
 
 /* Aside Section */
-.aside__container{
+.aside__container {
   height: fit-content;
 }
 
 .aside__menu {
-  
   list-style-type: none;
   flex-direction: column;
   width: 250px;
@@ -105,7 +102,7 @@ main {
 .aside__items a {
   background: lightblue;
   text-decoration: none;
-  padding: .5rem 1rem .5rem ;
+  padding: 0.5rem 1rem 0.5rem;
   width: 100%;
   font-weight: 700;
   margin: 0;
@@ -153,7 +150,6 @@ main {
   border: 1px solid #ccc;
   border-bottom: none;
   margin-right: 5px;
-  
 }
 
 .tab button:hover {
@@ -161,10 +157,9 @@ main {
 }
 
 .tab button.active {
-
   background: white;
 }
-.tab__item.active{
+.tab__item.active {
   display: block;
 }
 
@@ -176,29 +171,29 @@ main {
 
 /* Footer */
 footer {
-  display: block;
-  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  background: rgb(238, 238, 238);
   text-align: center;
   color: grey;
-
-  bottom: 0;
 }
 
 footer ul {
   display: flex;
   justify-content: center;
+  margin: 1.5rem 0 0.25rem;
 }
 footer li {
   list-style-type: none;
-  padding: 1rem 0.5rem 0rem;
+  padding: 0 0.5rem 0rem;
 }
 footer a {
   color: grey;
 }
 footer p {
-  margin-bottom: 0;
+  margin: 0.25rem 0 0.5rem;
 }
 
 sub {
-  margin-bottom: 2rem;
+  margin: 0.25rem 0 1rem;
 }
