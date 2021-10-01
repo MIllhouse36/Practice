@@ -11,7 +11,6 @@ body {
   margin: 0 auto;
   /* width: 1300px; */
   max-width: 1300px;
-  height: 100vh;
 }
 /* input header */
 .header__container {
@@ -58,7 +57,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  background: rgb(29, 114, 178);;
+  background: rgb(29, 114, 178);
   padding: 0.5rem 2rem;
   white-space: nowrap;
   text-align: center;
@@ -80,6 +79,22 @@ body {
 main {
   display: flex;
   /* justify-content: center; */
+}
+@media (max-width: 28rem) {
+  .header__container {
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+  }
+
+  .nav__ul {
+    flex-direction: column;
+  }
+  footer ul {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
 }
 
 /* Aside Section */
@@ -112,6 +127,7 @@ main {
 .about__container {
   width: 100%;
   margin: 0 1rem;
+  padding: 0 0;
 }
 
 .img-container {
@@ -175,7 +191,7 @@ footer {
   flex-direction: column;
   background: rgb(238, 238, 238);
   text-align: center;
-  color: grey;
+  color: rgb(175, 176, 180);
 }
 
 footer ul {
@@ -185,10 +201,10 @@ footer ul {
 }
 footer li {
   list-style-type: none;
-  padding: 0 0.5rem 0rem;
+  padding: 0.5rem 0.5rem 0rem;
 }
 footer a {
-  color: grey;
+  color: rgb(175, 176, 180);
 }
 footer p {
   margin: 0.25rem 0 0.5rem;
