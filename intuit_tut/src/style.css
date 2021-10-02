@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+  
   max-width: 1300px;
 }
 /* input header */
@@ -15,6 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   padding: 0 1rem;
 }
 
@@ -22,7 +25,7 @@ body {
   height: 2rem;
   display: flex;
   flex-wrap: nowrap;
-  /* padding: 0 0 0 100%; */
+ 
 }
 .input__container input {
   font-weight: 500;
@@ -75,7 +78,7 @@ body {
 
 main {
   display: flex;
-  /* justify-content: center; */
+
 }
 @media (max-width: 28rem) {
   .header__container {
@@ -89,8 +92,13 @@ main {
     flex-direction: column;
   }
   footer ul {
-    /* flex-direction: column; */
+    
     flex-wrap: wrap;
+  }
+
+  .aside__menu {
+    padding: 1rem 1rem;
+    margin: 0 auto;
   }
 }
 
@@ -103,7 +111,8 @@ main {
   list-style-type: none;
   flex-direction: column;
   width: 250px;
-  padding: 0 1rem;
+  padding: 1rem;
+  margin: 0 auto;
 }
 .aside__items {
   display: flex;
@@ -112,7 +121,6 @@ main {
   height: 2rem;
 }
 .aside__items a {
-  display: inline-block;
   background: lightblue;
   text-decoration: none;
   padding: 0.5rem 1rem 0.5rem;
@@ -123,9 +131,9 @@ main {
 }
 /* About/Hero section */
 .about__container {
-  width: 100%;
+  width: auto;
   margin: 0 1rem;
-  padding: 0 0;
+  padding: 0;
 }
 
 .img-container {
