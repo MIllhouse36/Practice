@@ -4,12 +4,12 @@ tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.tabTarget);
     tabitems.forEach((tabItem) => {
-      tabItem.classList.remove("active")
+      tabItem.classList.remove("active");
     });
     tabs.forEach((tab) => {
-      tab.classList.remove("active")
-    })
-    tab.classList.add("active")
+      tab.classList.remove("active");
+    });
+    tab.classList.add("active");
     target.classList.add("active");
   });
 });

@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 body {
@@ -9,7 +8,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  
+
   max-width: 1300px;
 }
 /* input header */
@@ -17,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   padding: 0 1rem;
 }
 
@@ -25,7 +24,6 @@ body {
   height: 2rem;
   display: flex;
   flex-wrap: nowrap;
- 
 }
 .input__container input {
   font-weight: 500;
@@ -78,7 +76,6 @@ body {
 
 main {
   display: flex;
-
 }
 @media (max-width: 28rem) {
   .header__container {
@@ -92,7 +89,6 @@ main {
     flex-direction: column;
   }
   footer ul {
-    
     flex-wrap: wrap;
   }
 
@@ -204,7 +200,7 @@ footer {
 footer ul {
   display: flex;
   justify-content: center;
-  margin: .75rem 0 0.25rem;
+  margin: 0.75rem 0 0.25rem;
   padding: 0;
 }
 footer li {
@@ -215,7 +211,7 @@ footer a {
   color: rgb(175, 176, 180);
 }
 footer p {
-  margin: 0.25rem .25rem 0.5rem;
+  margin: 0.25rem 0.25rem 0.5rem;
 }
 
 sub {
