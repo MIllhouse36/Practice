@@ -12,5 +12,5 @@ const logEvenNums2 = (num) =>{
     console.log(i);
   }
 }
-console.log(logEvenNums(4))
-console.log(logEvenNums2(7))
+logEvenNums(4)
+// logEvenNums2(7)
