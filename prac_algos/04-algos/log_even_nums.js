@@ -3,7 +3,7 @@
 
 const logEvenNums = (num) =>{
   for(let i = 0; i <= num; i++){
-    if(i % 2 === 0 && i !== undefined )
+    if(i % 2 === 0)
    console.log(i)
   }
 };
@@ -13,4 +13,4 @@ const logEvenNums2 = (num) =>{
   }
 }
 logEvenNums(4)
-// logEvenNums2(7)
+logEvenNums2(7)
