@@ -1,17 +1,36 @@
-// const vowelCount = (str)=>{
-//   let split = str.split('')
-//   let vowels = ["a","e","i","o","u"]
-//   let counter = 0
-//   for(let i = 0; i < split.length; i++){
-//     if(split[i] === "a" || split[i] === "e" || split[i] === "i" || split[i] === "o" || split[i] === "u"){
-//       counter++;
-//     }
-//   }
-//   console.log(counter);
-// }
+const vowelCount = (str) => {
+  let counter = 0;
+  for (let i = 0; i < str.length; i++) {
+    let lowered = str[i].toLowerCase();
+    if (
+      lowered === "a" ||
+      lowered === "e" ||
+      lowered === "i" ||
+      lowered === "o" ||
+      lowered === "u"
+    ) {
+      counter += 1;
+    }
+  }
+  return counter;
+};
+console.log(vowelCount(`POPTART`));
 
-// vowelCount(`poptart`)
+const vowelCount2 = (str) =>{
+  let counter = 0;
+  const vowels = ["a","e","i","o","u"]
+  for(let i=0; i< str.length; i++){
+    let lowered = str[i].toLowerCase();
+    if(vowels.indexOf(lowered) !== -1){
+     counter++;
+    }
+  }
+  return counter;
+}
 
-let arr = []
+console.log(vowelCount2(`POPTART`));
 
-console.log(arr.indexOf())
+
+// let arr = []
+
+// console.log(arr.indexOf())
