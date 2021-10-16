@@ -17,10 +17,14 @@
 // lrgSml([10,5,7,2,4,1,24])
 let numbers = [1,3,2,5,4];
 let numbers2 = [7,3,6,5,4];
-// let sortedHighesttoLowest = numbers.sort((a, b)=> b-a);
-// let sortedLowesttoHighest = numbers.sort((a, b)=> a-b);
-const sortedHighesttoLowest = (arr1, arr2)=> arr1.sort((a, b)=> b-a) && arr2.sort((a, b)=> b-a);
-const sortedLowesttoHighest = (arr)=>arr.sort((a, b)=> a-b);
+let sortedHighesttoLowest = [...numbers.sort((a, b)=> b-a)];
+let sortedLowesttoHighest = [...numbers.sort((a, b)=> a-b)];
+console.log(sortedHighesttoLowest);
+console.log(sortedLowesttoHighest);
 
-console.log(sortedHighesttoLowest(numbers, numbers2));
-// console.log(sortedLowesttoHighest(numbers));
+
+// const sortedHighesttoLowest = (arr1, arr2)=> arr1.sort((a, b)=> b-a) && arr2.sort((a, b)=> b-a);
+// const sortedLowesttoHighest = (arr)=>arr.sort((a, b)=> a-b);
+
+// console.log(sortedHighesttoLowest(numbers, numbers2));
+// // console.log(sortedLowesttoHighest(numbers));
