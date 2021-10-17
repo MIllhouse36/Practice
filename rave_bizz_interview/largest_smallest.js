@@ -19,6 +19,22 @@ let numbers = [1,3,2,5,4];
 let numbers2 = [7,3,6,5,4];
 let sortedHighesttoLowest = [...numbers.sort((a, b)=> b-a)];
 let sortedLowesttoHighest = [...numbers.sort((a, b)=> a-b)];
+let second 
+let second2 
+let firstsecond
+let firstsecond2
+for(let i = 0; i< sortedHighesttoLowest.length; i++){
+  second = sortedHighesttoLowest[sortedHighesttoLowest.length - 2]
+  firstsecond = sortedHighesttoLowest[1]
+}
+for(let i = 0; i< sortedLowesttoHighest.length; i++){
+  second2 = sortedLowesttoHighest[sortedLowesttoHighest.length - 2]
+  firstsecond2 = sortedLowesttoHighest[1]
+}
+console.log(second);
+console.log(second2);
+console.log(firstsecond)
+console.log(firstsecond2)
 console.log(sortedHighesttoLowest);
 console.log(sortedLowesttoHighest);
 
