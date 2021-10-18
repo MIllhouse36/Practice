@@ -15,28 +15,28 @@
 //  console.log(maxArr)
 // }
 // lrgSml([10,5,7,2,4,1,24])
-let numbers = [1,3,2,5,4];
-let numbers2 = [7,3,6,5,4];
-let sortedHighesttoLowest = [...numbers.sort((a, b)=> b-a)];
-let sortedLowesttoHighest = [...numbers.sort((a, b)=> a-b)];
-let second 
-let second2 
-let firstsecond
-let firstsecond2
-for(let i = 0; i< sortedHighesttoLowest.length; i++){
-  second = sortedHighesttoLowest[sortedHighesttoLowest.length - 2]
-  firstsecond = sortedHighesttoLowest[1]
-}
-for(let i = 0; i< sortedLowesttoHighest.length; i++){
-  second2 = sortedLowesttoHighest[sortedLowesttoHighest.length - 2]
-  firstsecond2 = sortedLowesttoHighest[1]
-}
-console.log(second);
-console.log(second2);
-console.log(firstsecond)
-console.log(firstsecond2)
-console.log(sortedHighesttoLowest);
-console.log(sortedLowesttoHighest);
+// let numbers = [1,3,2,5,4];
+// let numbers2 = [7,3,6,5,4];
+// let sortedHighesttoLowest = [...numbers.sort((a, b)=> b-a)];
+// let sortedLowesttoHighest = [...numbers.sort((a, b)=> a-b)];
+// let second 
+// let second2 
+// let firstsecond
+// let firstsecond2
+// for(let i = 0; i< sortedHighesttoLowest.length; i++){
+//   second = sortedHighesttoLowest[sortedHighesttoLowest.length - 2]
+//   firstsecond = sortedHighesttoLowest[1]
+// }
+// for(let i = 0; i< sortedLowesttoHighest.length; i++){
+//   second2 = sortedLowesttoHighest[sortedLowesttoHighest.length - 2]
+//   firstsecond2 = sortedLowesttoHighest[1]
+// }
+// console.log(second);
+// console.log(second2);
+// console.log(firstsecond)
+// console.log(firstsecond2)
+// console.log(sortedHighesttoLowest);
+// console.log(sortedLowesttoHighest);
 
 
 // const sortedHighesttoLowest = (arr1, arr2)=> arr1.sort((a, b)=> b-a) && arr2.sort((a, b)=> b-a);
@@ -44,3 +44,27 @@ console.log(sortedLowesttoHighest);
 
 // console.log(sortedHighesttoLowest(numbers, numbers2));
 // // console.log(sortedLowesttoHighest(numbers));
+
+// #solution!!
+let full = []
+let lastSecond; 
+let firstSecond
+const lrgSml = ( arr, arr2)=>{
+  for( let i = 0; i< arr.length; i++){
+    full.push(arr[i]);
+  }
+  for( let i = 0; i< arr2.length; i++){
+    full.push(arr2[i]);
+  }
+  let sorted = full.sort((a,b) => b-a);
+   for( let i = 0; i< full.length; i++){
+      lastSecond = full[full.length -2];
+      firstSecond = full[1]
+   }
+   console.log(firstSecond);
+   console.log(lastSecond)
+}
+
+lrgSml([2,4,7,8,9], [1,3,5,6,10])
+
+
