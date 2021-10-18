@@ -53,18 +53,24 @@ const lrgSml = ( arr, arr2)=>{
   for( let i = 0; i< arr.length; i++){
     full.push(arr[i]);
   }
+  // console.log(full);
+
   for( let i = 0; i< arr2.length; i++){
     full.push(arr2[i]);
+
   }
-  let sorted = full.sort((a,b) => b-a);
+  // console.log(full);
+
+  full.sort((a,b) => b-a);
    for( let i = 0; i< full.length; i++){
       lastSecond = full[full.length -2];
       firstSecond = full[1]
    }
-   console.log(firstSecond);
-   console.log(lastSecond)
+   console.log(full)
+   console.log(`2nd largest: ${firstSecond}`);
+   console.log(`2nd smallest: ${lastSecond}`)
 }
 
-lrgSml([2,4,7,8,9], [1,3,5,6,10])
+lrgSml([10,5,7,2,4,1,24], [8,23,29,25,40,0,24])
 
 
