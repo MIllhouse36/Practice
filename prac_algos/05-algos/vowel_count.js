@@ -31,11 +31,11 @@ const vowelCount2 = (str) =>{
 console.log(vowelCount2(`POPTART`));
 
 
-// let arr = []
+let arr = []
 
-// console.log(arr.indexOf())
+console.log(arr.indexOf())
 
-// const foo = [1,2,3];
-// const [n] = foo;
-// console.log(n)
-// console.log('dirt worm worm dirt worm'.split('dirt').length)
+const foo = [1,2,3];
+const [n] = foo;
+console.log(n)
+console.log('dirt worm worm dirt worm'.split('dirt').length)
