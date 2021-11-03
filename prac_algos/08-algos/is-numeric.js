@@ -1,12 +1,7 @@
-// const isNumeric = (str)=>{
-//   for(let i=0; i<str.length; i++){
-//     let char = str[i]
+// Write code to create a function that accepts a string and determines if the string is a valid number. You may not use any regex, built-in methods type conversion to accomplish this.
 
-//   }
-// }
-
-var isNumeric = function (str) {
-  var digits = {
+const isNumeric = (str) => {
+  const digits = {
     0: true,
     1: true,
     2: true,
@@ -19,11 +14,11 @@ var isNumeric = function (str) {
     9: true,
   };
 
-  var hasNum = false;
-  var hasDecimal = false;
+  let hasNum = false;
+  let hasDec = false;
 
-  for (var i = 0; i < str.length; i++) {
-    var char = str[i];
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
 
     if (digits[char]) {
       hasNum = true;
@@ -31,29 +26,27 @@ var isNumeric = function (str) {
     }
 
     if (i === 0) {
-      if (char === "-" || char === "+") {
+      if (char === "+" || char === "-") {
         continue;
       }
     }
 
     if (char === ".") {
-      if (hasDecimal === true) {
+      if (hasDec === true) {
         return false;
       }
-
-      hasDecimal = true;
+      hasDec = true;
       continue;
     }
-
+    
     return false;
   }
 
   if (hasNum) {
     return true;
   }
-
   return false;
 };
 
 console.log(isNumeric("0123.00"));
-console.log(isNumeric("+-13"));
+console.log(isNumeric("+-a13"));
