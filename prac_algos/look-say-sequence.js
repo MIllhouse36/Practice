@@ -1,3 +1,0 @@
-const lookAndSay = (n)=>{
-  
-}
